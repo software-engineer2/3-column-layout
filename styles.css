@@ -1,0 +1,122 @@
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+html {
+  /* font-size: 10px;
+
+  10px / 16px = 0.625 = 62.5%
+  Percentage of user's browser font-size setting */
+
+  font-size: 62.5%;
+}
+main {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  padding: 9.6rem;
+  font-size: 1.5rem;
+  flex-direction: row;
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  color: #f2f2f2;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1.5;
+}
+
+section {
+  padding: 4.8rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+button {
+  margin-top: auto;
+  padding: 1.4rem 2.8rem;
+  border-radius: 100px;
+  background-color: #f2f2f2;
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
+  border: 2px solid #f2f2f2;
+}
+
+.first-section {
+  background-color: #e38826;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.first-section button {
+  color: #e38826;
+}
+
+.second-section {
+  background-color: #006970;
+}
+
+.second-section button {
+  color: #006970;
+}
+
+.third-section {
+  background-color: #004241;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.third-section button {
+  color: #004241;
+}
+
+button:hover {
+  background-color: transparent;
+  color: #f2f2f2;
+}
+
+@media (max-width: 58em) {
+  main {
+    flex-direction: column;
+  }
+  .first-section {
+    background-color: #e38826;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+  .third-section {
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
+}
+
+@media (max-width: 35em) {
+  main {
+    padding: 3.2rem;
+  }
+  section {
+    padding: 6.4rem 2.4rem;
+  }
+}
